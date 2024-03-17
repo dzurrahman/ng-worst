@@ -45,7 +45,7 @@ export interface WorstColorTheme {
   ],
   encapsulation: ViewEncapsulation.None,
 })
-export class ButtonComponent implements OnInit {
+export class WorstButtonComponent implements OnInit {
   @Input() btnText: string = 'Click Me!';
   @Input() colorTheme: WorstColorTheme = { main: '#61BDBA', hover: '#36817C', active: '#1E4845' };
 
@@ -63,10 +63,10 @@ export class ButtonComponent implements OnInit {
 @NgModule({
   imports: [CommonModule],
   declarations: [
-    ButtonComponent
+    WorstButtonComponent
   ],
   exports: [
-    ButtonComponent
+    WorstButtonComponent
   ],
 })
 export class WorstButtonModule {}
